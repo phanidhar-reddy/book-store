@@ -1,0 +1,743 @@
+{
+  "users": [
+    {
+      "userid": "raj@gmail.com",
+      "password": "12345",
+      "name": "Raj"
+    },
+    {
+      "userid": "ram@gmail.com",
+      "password": "12345",
+      "name": "Ram"
+    },
+    {
+      "userid": "sham@gmail.com",
+      "password": "12345",
+      "name": "Sham"
+    }
+  ],
+
+  "books": [
+    {
+      "title": "Sidney Sheldon's Reckless",
+      "publisher": "William Morrow",
+      "publishedDate": "2016-07-26",
+      "authors": ["Sidney Sheldon", "Tilly Bagshawe"],
+      "categories": ["Fiction"],
+      "pageCount": 400,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=mChtjgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=mChtjgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      },
+      "averageRating": 4
+    },
+    {
+      "title": "Nothing Lasts Forever",
+      "publisher": "HarperCollins UK",
+      "publishedDate": "2012-06-07",
+      "authors": ["Sidney Sheldon"],
+      "categories": ["Fiction"],
+      "pageCount": 384,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=DrMFt26_VIoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=DrMFt26_VIoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "averageRating": 3.5
+    },
+    {
+      "title": "Bloodline",
+      "publisher": "HarperCollins UK",
+      "publishedDate": "2012-06-07",
+      "authors": ["Sidney Sheldon"],
+      "categories": ["Fiction"],
+      "pageCount": 416,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=ceOK9LZOZ0YC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=ceOK9LZOZ0YC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "averageRating": 3
+    },
+    {
+      "title": "Rage of Angels",
+      "publisher": "HarperCollins UK",
+      "publishedDate": "2012-06-07",
+      "authors": ["Sidney Sheldon"],
+      "categories": ["Fiction"],
+      "pageCount": 624,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=LUcua7IYPB4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=LUcua7IYPB4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "averageRating": 3
+    },
+    {
+      "title": "The Best Laid Plans",
+      "publisher": "HarperCollins UK",
+      "publishedDate": "2012-06-07",
+      "authors": ["Sidney Sheldon"],
+      "categories": ["Fiction"],
+      "pageCount": 352,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=x7Kv7FgPXjQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=x7Kv7FgPXjQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "averageRating": 3
+    },
+    {
+      "title": "Nothing Lasts Forever",
+      "publisher": "William Morrow & Company",
+      "publishedDate": "1994",
+      "authors": ["Sidney Sheldon"],
+      "categories": ["Fiction"],
+      "pageCount": 398,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=dI9kAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=dI9kAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      },
+      "averageRating": 3.5
+    },
+    {
+      "title": "Sidney Sheldon's The Tides of Memory",
+      "publisher": "Harper Collins",
+      "publishedDate": "2013-04-09",
+      "authors": ["Sidney Sheldon", "Tilly Bagshawe"],
+      "categories": ["Fiction"],
+      "pageCount": 480,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=H53EtwNWdbMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=H53EtwNWdbMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      }
+    },
+    {
+      "title": "Tell Me Your Dreams",
+      "publisher": "HarperCollins UK",
+      "publishedDate": "2012-06-07",
+      "authors": ["Sidney Sheldon"],
+      "categories": ["Fiction"],
+      "pageCount": 352,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=_J-NHwjl7N8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=_J-NHwjl7N8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "averageRating": 4
+    },
+    {
+      "title": "Sidney Sheldon’s The Silent Widow",
+      "publisher": "HarperCollins",
+      "publishedDate": "2018-06-14",
+      "authors": ["Sidney Sheldon", "Tilly Bagshawe"],
+      "categories": ["Fiction"],
+      "pageCount": 448,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=8hJCDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=8hJCDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      }
+    },
+    {
+      "title": "Sheldon's Retail Directory of the United States and Canada and Phelon's Resident Buyers and Merchandise Brokers",
+      "publishedDate": "1990",
+      "categories": ["Clothing trade"],
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=CoErAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=CoErAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      }
+    },
+    {
+      "title": "The Rocket Book",
+      "publisher": "BoD – Books on Demand",
+      "publishedDate": "2018-09-21",
+      "authors": ["Peter Newell"],
+      "categories": ["Fiction"],
+      "pageCount": 52,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=RD1wDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=RD1wDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "averageRating": 4
+    },
+    {
+      "title": "It's ONLY Rocket Science",
+      "publisher": "Springer Science & Business Media",
+      "publishedDate": "2008-03-21",
+      "authors": ["Lucy Rogers"],
+      "categories": ["Mathematics"],
+      "pageCount": 350,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=75b84eC-ulsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=75b84eC-ulsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "averageRating": 5
+    },
+    {
+      "title": "Make: Rockets",
+      "publisher": "Maker Media, Inc.",
+      "publishedDate": "2014-08-21",
+      "authors": ["Mike Westerfield"],
+      "categories": ["Technology & Engineering"],
+      "pageCount": 520,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=cadUBAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=cadUBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "averageRating": 4
+    },
+    {
+      "title": "Rocket Science: A Beginner's Guide to the Fundamentals of Spaceflight",
+      "publisher": "Candlewick Press (MA)",
+      "publishedDate": "2020-11-03",
+      "authors": ["Andrew Rader"],
+      "categories": ["Juvenile Nonfiction"],
+      "pageCount": 64,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=h-PbDwAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=h-PbDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      },
+      "averageRating": 5
+    },
+    {
+      "title": "Rocket Propulsion Elements",
+      "publisher": "John Wiley & Sons",
+      "publishedDate": "2010-02-02",
+      "authors": ["George P. Sutton", "Oscar Biblarz"],
+      "categories": ["Science"],
+      "pageCount": 784,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=1Sf6eV6CgtEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=1Sf6eV6CgtEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      }
+    },
+    {
+      "title": "Rocket Fuel",
+      "publisher": "VeloPress",
+      "publishedDate": "2016-05-01",
+      "authors": ["Matthew Kadey"],
+      "categories": ["Cooking"],
+      "pageCount": 256,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=JmP4sgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=JmP4sgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      }
+    },
+    {
+      "title": "Rocket Propulsion",
+      "publisher": "Macmillan",
+      "publishedDate": "2010-02",
+      "authors": ["K Ramamurthi"],
+      "pageCount": 352,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=kvt2V5W0DOIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=kvt2V5W0DOIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "averageRating": 4.5
+    },
+    {
+      "title": "Rocket Ranch",
+      "publisher": "Springer",
+      "publishedDate": "2015-06-26",
+      "authors": ["Jonathan H. Ward"],
+      "categories": ["Technology & Engineering"],
+      "pageCount": 331,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=jlwICgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=jlwICgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "averageRating": 2
+    },
+    {
+      "title": "Tiny Little Rocket",
+      "publisher": "David Fickling Books",
+      "publishedDate": "2018-07-31",
+      "authors": ["Richard Collingridge"],
+      "categories": ["Juvenile Fiction"],
+      "pageCount": 32,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=PQyStAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=PQyStAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      }
+    },
+    {
+      "title": "Solid Rocket Propulsion Technology",
+      "publisher": "Newnes",
+      "publishedDate": "2012-12-02",
+      "authors": ["A. Davenas"],
+      "categories": ["Technology & Engineering"],
+      "pageCount": 622,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=qJ3OdRJQSRwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=qJ3OdRJQSRwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      }
+    },
+    {
+      "title": "Marvel Studios Visual Dictionary",
+      "publisher": "DK",
+      "publishedDate": "2018-09-25",
+      "authors": ["Adam Bray"],
+      "categories": ["Comics & Graphic Novels"],
+      "pageCount": 200,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=uYzRswEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=uYzRswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      },
+      "averageRating": 5
+    },
+    {
+      "title": "The Marvel Book",
+      "publisher": "Dorling Kindersley Ltd",
+      "publishedDate": "2019-10-03",
+      "authors": ["DK", "Stephen Wiacek"],
+      "categories": ["Comics & Graphic Novels"],
+      "pageCount": 256,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=Jve0DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=Jve0DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      }
+    },
+    {
+      "title": "Marvel Comics into Film",
+      "publisher": "McFarland",
+      "publishedDate": "2016-03-30",
+      "authors": [
+        "Matthew J. McEniry,",
+        "Robert Moses Peaslee",
+        "Robert G. Weiner"
+      ],
+      "categories": ["Performing Arts"],
+      "pageCount": 280,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=V6_uCwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=V6_uCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "averageRating": 3.5
+    },
+    {
+      "title": "Marvel Studios: The First Ten Years",
+      "publisher": "Titan Books (US, CA)",
+      "publishedDate": "2018-11-20",
+      "authors": ["Titan"],
+      "categories": ["Performing Arts"],
+      "pageCount": 144,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=7vdOEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=7vdOEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      }
+    },
+    {
+      "title": "The Marvel Book",
+      "publisher": "DK",
+      "publishedDate": "2019-10",
+      "authors": ["Stephen Wiacek"],
+      "categories": ["Young Adult Nonfiction"],
+      "pageCount": 256,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=XjPCwAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=XjPCwAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      }
+    },
+    {
+      "title": "Marvel: Universe of Super Heroes",
+      "publisher": "Verlag Fur Moderne Kunst",
+      "publishedDate": "2019-02",
+      "authors": ["Stan Lee", "Evan Narcisse", "Brooks Peck", "Patrick Reed"],
+      "categories": ["Cartoonists"],
+      "pageCount": 248,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=rehHvwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=rehHvwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      }
+    },
+    {
+      "title": "How To Draw Comics The Marvel Way",
+      "publisher": "Simon and Schuster",
+      "publishedDate": "1984-09-14",
+      "authors": ["Stan Lee", "John Buscema"],
+      "categories": ["Art"],
+      "pageCount": 192,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=m8XDBQzgEz4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=m8XDBQzgEz4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "averageRating": 4
+    },
+    {
+      "title": "Marvel Absolutely Everything You Need to Know",
+      "publishedDate": "2016-08-02",
+      "authors": ["Adam Bray", "John Sazaklis", "Sven Wilson", "Lorraine Cink"],
+      "pageCount": 240,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=tvkMkAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=tvkMkAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      }
+    },
+    {
+      "title": "Marvel Comics",
+      "publisher": "Harper Perennial",
+      "publishedDate": "2013-10-01",
+      "authors": ["Sean Howe"],
+      "categories": ["Performing Arts"],
+      "pageCount": 496,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=oOMblwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=oOMblwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      },
+      "averageRating": 4
+    },
+    {
+      "title": "All of the Marvels",
+      "publisher": "Profile Books",
+      "publishedDate": "2021-10-07",
+      "authors": ["Douglas Wolk"],
+      "categories": ["Literary Criticism"],
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=w0UrEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=w0UrEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      }
+    },
+    {
+      "title": "Playing Harry Potter",
+      "publisher": "McFarland",
+      "publishedDate": "2015-06-11",
+      "authors": ["Lisa S. Brenner"],
+      "categories": ["Literary Criticism"],
+      "pageCount": 238,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=LbnwCQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=LbnwCQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "averageRating": 5
+    },
+    {
+      "title": "The Irresistible Rise of Harry Potter",
+      "publisher": "Verso",
+      "publishedDate": "2002",
+      "authors": ["Andrew Blake"],
+      "categories": ["Literary Criticism"],
+      "pageCount": 118,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=Aaug_RnI-xQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=Aaug_RnI-xQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "averageRating": 5
+    },
+    {
+      "title": "Finding Freedom",
+      "publisher": "HarperCollins",
+      "publishedDate": "2020-08-11",
+      "authors": ["Omid Scobie", "Carolyn Durand"],
+      "categories": ["Biography & Autobiography"],
+      "pageCount": 400,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=1WPSDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=1WPSDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "averageRating": 1.5
+    },
+    {
+      "title": "해리포터와 마법사의 돌(원서 읽는 단어장)",
+      "publishedDate": "2010-03-02",
+      "authors": ["롱테일북스편집부"],
+      "pageCount": 198,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=rwfURwAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=rwfURwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      }
+    },
+    {
+      "title": "Harry",
+      "publishedDate": "2019-05",
+      "authors": ["Angela Levin"],
+      "pageCount": 320,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=raTsvgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=raTsvgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      }
+    },
+    {
+      "title": "Harry",
+      "publisher": "Hachette UK",
+      "publishedDate": "2018-03-20",
+      "authors": ["Katie Nicholl"],
+      "categories": ["Biography & Autobiography"],
+      "pageCount": 272,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=VD80DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=VD80DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      }
+    },
+    {
+      "title": "Meghan and Harry",
+      "publishedDate": "2020-06-25",
+      "authors": ["Lady Colin Campbell"],
+      "pageCount": 411,
+      "averageRating": 4
+    },
+    {
+      "title": "Harry Potter Handbook, Movie Magic",
+      "publisher": "Scholastic Inc.",
+      "publishedDate": "2011",
+      "authors": ["Scholastic Inc"],
+      "categories": ["Juvenile Nonfiction"],
+      "pageCount": 64,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=uCKvLmFfc84C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=uCKvLmFfc84C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      }
+    },
+    {
+      "title": "Harry Potter and Convergence Culture",
+      "publisher": "McFarland",
+      "publishedDate": "2018-02-09",
+      "authors": ["Amanda Firestone", "Leisa A. Clark"],
+      "categories": ["Social Science"],
+      "pageCount": 223,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=NVNLDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=NVNLDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      }
+    },
+    {
+      "title": "Harry's Farewell",
+      "publishedDate": "2004",
+      "authors": ["Richard Stewart Kirkendall"],
+      "categories": ["History"],
+      "pageCount": 381,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=O1B3AAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=O1B3AAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      }
+    },
+    {
+      "title": "The Disney Book",
+      "publisher": "Dorling Kindersley Ltd",
+      "publishedDate": "2015-10-01",
+      "authors": ["Jim Fanning"],
+      "categories": ["Performing Arts"],
+      "pageCount": 200,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=qJ7GDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=qJ7GDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      }
+    },
+    {
+      "title": "Disney & His Worlds",
+      "publisher": "Routledge",
+      "publishedDate": "2003-09-02",
+      "authors": ["Alan Bryman"],
+      "categories": ["Social Science"],
+      "pageCount": 236,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=xeCJAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=xeCJAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      }
+    },
+    {
+      "title": "Who Was Walt Disney?",
+      "publisher": "Penguin",
+      "publishedDate": "2009-04-16",
+      "authors": ["Whitney Stewart", "Who HQ"],
+      "categories": ["Juvenile Nonfiction"],
+      "pageCount": 112,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=2uc1yzX3ue0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=2uc1yzX3ue0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "averageRating": 4
+    },
+    {
+      "title": "Understanding Disney",
+      "publisher": "Polity",
+      "publishedDate": "2001-04-11",
+      "authors": ["Janet Wasko"],
+      "categories": ["Social Science"],
+      "pageCount": 272,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=1goTERg-s28C&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=1goTERg-s28C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      },
+      "averageRating": 4
+    },
+    {
+      "title": "Disney Princess: Book of Secrets",
+      "publisher": "Studio Fun International",
+      "publishedDate": "2020-03-10",
+      "authors": ["Marilyn Easton", "Editors of Studio Fun International"],
+      "categories": ["Juvenile Fiction"],
+      "pageCount": 44,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=8tTVDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=8tTVDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      }
+    },
+    {
+      "title": "Disney",
+      "publisher": "Regnery Pub",
+      "publishedDate": "1998",
+      "authors": ["Peter Schweizer", "Rochelle Schweizer"],
+      "categories": ["Business & Economics"],
+      "pageCount": 374,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=lZNZAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=lZNZAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      }
+    },
+    {
+      "title": "The Disney Middle Ages",
+      "publisher": "Palgrave Macmillan",
+      "publishedDate": "2012-11-28",
+      "authors": ["Tison Pugh", "Susan Aronstein"],
+      "categories": ["Performing Arts"],
+      "pageCount": 283,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=ljMmuV2VUXwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=ljMmuV2VUXwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      }
+    },
+    {
+      "title": "Disney Baby",
+      "publishedDate": "2018-05",
+      "categories": ["Children's stories, American"],
+      "pageCount": 12,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=2g1jtAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=2g1jtAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      }
+    },
+    {
+      "title": "Disney Villains Tarot Deck and Guidebook | Movie Tarot Deck | Pop Culture Tarot",
+      "publisher": "Simon and Schuster",
+      "publishedDate": "2021-11-09",
+      "authors": ["Minerva Siegel"],
+      "categories": ["Art"],
+      "pageCount": 128,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=hEdOEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=hEdOEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      }
+    },
+    {
+      "title": "Disney's America Staff Report & Recommendation",
+      "publishedDate": "1994",
+      "authors": ["Prince William County (Va.)"],
+      "categories": ["Disney's America"],
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=sQhPAAAAYAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=sQhPAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      }
+    },
+    {
+      "title": "The Legends Of Khasak",
+      "publisher": "Penguin Books India",
+      "publishedDate": "2008-05-14",
+      "authors": ["O.V. Vijayan"],
+      "categories": ["India"],
+      "pageCount": 216,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=VEs6FPoNq-gC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=VEs6FPoNq-gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      }
+    },
+    {
+      "title": "DC Comics: Generations",
+      "publishedDate": "2021",
+      "authors": ["Various"],
+      "categories": ["Comics & Graphic Novels"],
+      "pageCount": 184,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=82ENzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=82ENzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      }
+    },
+    {
+      "title": "The DC Book",
+      "publisher": "Dorling Kindersley Ltd",
+      "publishedDate": "2021-11-04",
+      "authors": ["Stephen Wiacek"],
+      "categories": ["Comics & Graphic Novels"],
+      "pageCount": 224,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=NMM8EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=NMM8EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      }
+    },
+    {
+      "title": "DC Poster Portfolio: Clay Mann",
+      "publishedDate": "2020-12-22",
+      "authors": ["Clay Mann"],
+      "pageCount": 42,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=tHd8zQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=tHd8zQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      }
+    },
+    {
+      "title": "How to Draw: DC",
+      "publisher": "Simon and Schuster",
+      "publishedDate": "2021-04-20",
+      "authors": ["Scott Koblish"],
+      "categories": ["Art"],
+      "pageCount": 96,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=914lEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=914lEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      }
+    },
+    {
+      "title": "Policymaker's Journal",
+      "publisher": "Simon and Schuster",
+      "publishedDate": "2021-07-06",
+      "authors": ["Kaushik Basu"],
+      "categories": ["Biography & Autobiography"],
+      "pageCount": 345,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=VNkgEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=VNkgEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      }
+    },
+    {
+      "title": "DC Dutta's Textbook of Gynecology",
+      "publisher": "JP Medical Ltd",
+      "publishedDate": "2014-04-30",
+      "authors": ["D. C. Dutta", "Hiralal Konar"],
+      "categories": ["Medical"],
+      "pageCount": 702,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=40yVAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=40yVAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "averageRating": 4
+    },
+    {
+      "title": "Advanced Multi-Quadrant Operation DC/DC Converters",
+      "publisher": "CRC Press",
+      "publishedDate": "2018-10-08",
+      "authors": ["Fang Lin Luo", "Hong Ye"],
+      "categories": ["Technology & Engineering"],
+      "pageCount": 216,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=WfXKBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=WfXKBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      }
+    },
+    {
+      "title": "Justice League: an Adult Coloring Book",
+      "publishedDate": "2017-10-17",
+      "authors": ["DC Comics", "Various"],
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=fuTNAQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=fuTNAQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      }
+    },
+    {
+      "title": "DC: Women of Action",
+      "publisher": "Chronicle Books",
+      "publishedDate": "2019-10-22",
+      "authors": ["Shea Fontana"],
+      "categories": ["Comics & Graphic Novels"],
+      "pageCount": 160,
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=Ms6qDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=Ms6qDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "averageRating": 5
+    }
+  ]
+}
