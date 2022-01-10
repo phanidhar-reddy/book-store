@@ -1,5 +1,5 @@
-// import axios from "axios";
+import axios from "axios";
 
-// const dbServerAxios = axios.create(" http://localhost:3001");
+const dbServerAxios = axios.create(" http://localhost:3001");
 
-// export default dbServerAxios;
+export default dbServerAxios;

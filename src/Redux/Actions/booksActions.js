@@ -3,7 +3,7 @@ import { ADD_BOOKS } from "../AllConstants";
 
 const getBooksDataAndUpdate = async (dispatch) => {
   const books = await booksApi.getAllBookDetails();
-  dispatch(ADD_BOOKS, [...books]);
+  dispatch({ type: ADD_BOOKS, value: [...books] });
 };
 
 const booksMethodMapper = {

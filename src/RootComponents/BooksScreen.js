@@ -1,4 +1,4 @@
-import { Grid, ImageList, List } from "@mui/material";
+import { Box, Grid, ImageList, List } from "@mui/material";
 import React, { useEffect } from "react";
 import BookTile from "../Components/BookTile";
 import _ from "lodash";
@@ -13,9 +13,9 @@ export const BooksScreen = () => {
       return <div> No Books Available </div>;
     }
 
-    return _.map(books, (book) => {
+    return _.map(books, (book, id) => {
       if (undefined != book.imageLinks) {
-        return <BookTile key={book.name} {...book}></BookTile>;
+        return <BookTile key={book.name + ":" + id} {...book}></BookTile>;
       } else {
         return <></>;
       }
@@ -24,9 +24,9 @@ export const BooksScreen = () => {
 
   return (
     <Grid>
-      <ImageList key={"booksScreenList"} cols={3}>
+      <Box sx={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)" }}>
         {getBooksTileConversion()}
-      </ImageList>
+      </Box>
     </Grid>
   );
 };

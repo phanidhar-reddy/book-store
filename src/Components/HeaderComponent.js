@@ -21,7 +21,7 @@ import {
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export const HeaderComponent = () => {
+export const HeaderComponent = (props) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   //const pages = [{ name: "Books", link: "/book" }, "Marathon", "Reports"];
@@ -79,18 +79,16 @@ export const HeaderComponent = () => {
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <NavLink
-                key={page.name}
-                to={page.link}
-                style={{ textDecoration: "none" }}
-              >
-                <Button
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "white", display: "block" }}
-                >
-                  {page.name}
-                </Button>
-              </NavLink>
+              <MenuItem onClick={props.handleBooksFetch} key={page.name}>
+                <NavLink to={page.link} style={{ textDecoration: "none" }}>
+                  <Button
+                    onClick={handleCloseNavMenu}
+                    sx={{ my: 2, color: "white", display: "block" }}
+                  >
+                    {page.name}
+                  </Button>
+                </NavLink>
+              </MenuItem>
             ))}
           </Box>
 
