@@ -1,7 +1,8 @@
 import axios from "axios";
+import { DB_URL } from "../Redux/AllConstants";
 
-const getAllBookDetails = async () => {
-  const booksResponse = await axios.get("http://localhost:3001/books");
+const getAllBookDetails = async (props) => {
+  const booksResponse = await axios.get(`${DB_URL}/books`);
   return booksResponse.data;
 };
 

@@ -1,12 +1,12 @@
-import { Box, Grid, ImageList, List } from "@mui/material";
-import React, { useEffect } from "react";
+import { Box, Grid } from "@mui/material";
+import React from "react";
 import BookTile from "../Components/BookTile";
 import _ from "lodash";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 export const BooksScreen = () => {
   const books = useSelector((state) => state.booksReducer.books);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const getBooksTileConversion = () => {
     if (_.isEmpty(books)) {
@@ -14,7 +14,7 @@ export const BooksScreen = () => {
     }
 
     return _.map(books, (book, id) => {
-      if (undefined != book.imageLinks) {
+      if (undefined !== book.imageLinks) {
         return <BookTile key={book.name + ":" + id} {...book}></BookTile>;
       } else {
         return <></>;

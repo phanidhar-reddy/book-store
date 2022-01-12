@@ -28,7 +28,7 @@ const BoxComponent = (props) => {
       />
     );
 
-    if (props.types[id] == "date") {
+    if (props.types[id] === "date") {
       field = (
         <TextField
           variant="outlined"

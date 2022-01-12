@@ -1,8 +1,8 @@
-import "./App.css";
 import { BrowserRouter } from "react-router-dom";
+import "./App.css";
 import { PageMain } from "./RootPages/PageMain";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
@@ -10,6 +10,6 @@ function App() {
       </div>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

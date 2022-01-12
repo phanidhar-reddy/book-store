@@ -1,3 +1,3 @@
-const marathonInit = {
+export const marathonInit = {
   marathon: [],
 };

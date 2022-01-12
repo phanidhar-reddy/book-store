@@ -3,17 +3,23 @@
     {
       "userid": "raj@gmail.com",
       "password": "12345",
-      "name": "Raj"
+      "lastname": "khanna",
+      "firstname": "Raj",
+      "role": "0"
     },
     {
       "userid": "ram@gmail.com",
       "password": "12345",
-      "name": "Ram"
+      "lastname": "Krishna",
+      "name": "Ram",
+      "role": "0"
     },
     {
       "userid": "sham@gmail.com",
       "password": "12345",
-      "name": "Sham"
+      "lastname": "sundar",
+      "name": "Sham",
+      "role": "1"
     }
   ],
 

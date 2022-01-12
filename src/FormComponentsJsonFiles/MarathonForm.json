@@ -14,5 +14,5 @@
     ["Total Pages on Book"]
   ],
   "types": [["text", "text"], ["email"], ["text"], ["text", "date"], ["text"]],
-  "disabled": [[true, true], [true], [false], [false, false], [false]]
+  "disabled": [[true, true], [true], [false], [false, true], [false]]
 }

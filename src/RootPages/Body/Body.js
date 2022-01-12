@@ -1,4 +1,3 @@
-import { Dashboard } from "@mui/icons-material";
 import { Grid } from "@mui/material";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
@@ -8,11 +7,16 @@ import { MarathonComponent } from "../../RootComponents/MarathonComponent";
 import { ProfileDetailsComponent } from "../../RootComponents/ProfileDetailsComponent";
 import { ReportComponent } from "../../RootComponents/ReportComponent";
 import SignInComponent from "../../RootComponents/SignInComponent";
-export const Body = () => {
+export const Body = (props) => {
   return (
     <Grid>
       <Routes>
-        <Route exact path="/" element={<SignInComponent />}></Route>
+        <Route exact path="/" element={<SignInComponent abc="22" />}></Route>
+        <Route
+          exact
+          path="/signin"
+          element={<SignInComponent abc="22" />}
+        ></Route>
         <Route exact path="/marathon" element={<MarathonComponent />}></Route>
         <Route exact path="/reports" element={<ReportComponent />}></Route>
         <Route exact path="/books" element={<BooksScreen />}></Route>

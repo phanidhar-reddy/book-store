@@ -10,9 +10,41 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import userApi from "../Services/UserService";
+import UserContext from "../UserContext/UserContext";
 
-const SignInComponent = () => {
+const SignInComponent = (props) => {
+  const [loginState, updateState] = useState({
+    email: "",
+    passsword: "",
+  });
+  const history = useNavigate();
+  const userCon = useContext(UserContext);
+
+  const onChnageFunction = (event) => {
+    let value = event.target.value;
+    updateState((prev) => {
+      prev[event.target.name] = value;
+      return { ...prev };
+    });
+  };
+
+  const loginToScreen = async () => {
+    const userData = await userApi.getCurrentUserDetails(
+      loginState.email,
+      loginState.passsword
+    );
+
+    if (userData) {
+      userCon.updateUser({
+        ...userData[0],
+      });
+      history("../marathon", { replace: true });
+    }
+  };
+
   return (
     <Grid container direction="row" justify="center" alignItems="flex-start">
       <Container fixed maxWidth="xs">
@@ -34,6 +66,8 @@ const SignInComponent = () => {
             name="email"
             autoComplete="email"
             autoFocus
+            value={loginState.email}
+            onChange={onChnageFunction}
           />
           <TextField
             variant="outlined"
@@ -45,8 +79,15 @@ const SignInComponent = () => {
             type="password"
             id="password"
             autoComplete="current-password"
+            value={loginState.password}
+            onChange={onChnageFunction}
           />
-          <Button fullWidth variant="contained" color="primary">
+          <Button
+            fullWidth
+            onClick={loginToScreen}
+            variant="contained"
+            color="primary"
+          >
             Sign In
           </Button>
         </form>
@@ -147,6 +188,7 @@ const SignInComponent = () => {
           </ButtonGroup>
         </Grid>
       </Container>
+      {userCon.user.firstname}
     </Grid>
   );
 };

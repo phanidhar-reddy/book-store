@@ -1,10 +1,4 @@
-import {
-  LibraryAddTwoTone,
-  LibraryBooksTwoTone,
-  MenuBook,
-  MenuOpen,
-  MenuOpenSharp,
-} from "@mui/icons-material";
+import { LibraryAddTwoTone, MenuBook } from "@mui/icons-material";
 import {
   AppBar,
   Avatar,
@@ -22,8 +16,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 export const HeaderComponent = (props) => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const display = props.hideAll ? "none" : "block";
   //const pages = [{ name: "Books", link: "/book" }, "Marathon", "Reports"];
   const pages = [
     { name: "Books", link: "/books" },
@@ -37,15 +31,13 @@ export const HeaderComponent = (props) => {
     { name: "logout", link: "/" },
   ];
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
+  const handleLogOut = () => {
+    handleCloseUserMenu();
+    props.handleLogout();
   };
 
   const handleCloseUserMenu = () => {
@@ -71,7 +63,6 @@ export const HeaderComponent = (props) => {
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
-              onClick={handleOpenNavMenu}
               color="inherit"
             >
               <MenuBook />
@@ -81,10 +72,7 @@ export const HeaderComponent = (props) => {
             {pages.map((page) => (
               <MenuItem onClick={props.handleBooksFetch} key={page.name}>
                 <NavLink to={page.link} style={{ textDecoration: "none" }}>
-                  <Button
-                    onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: "white", display: "block" }}
-                  >
+                  <Button sx={{ my: 2, color: "white", display: { display } }}>
                     {page.name}
                   </Button>
                 </NavLink>
@@ -94,7 +82,10 @@ export const HeaderComponent = (props) => {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+              <IconButton
+                onClick={handleOpenUserMenu}
+                sx={{ p: 0, display: { display } }}
+              >
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
@@ -114,16 +105,22 @@ export const HeaderComponent = (props) => {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting.name} onClick={handleCloseNavMenu}>
-                  <NavLink
-                    to={setting.link}
-                    style={{ textDecoration: "none", color: "black" }}
-                  >
-                    <Typography textAlign="center">{setting.name}</Typography>
-                  </NavLink>
-                </MenuItem>
-              ))}
+              {settings.map((setting) => {
+                let handleClose = handleCloseUserMenu;
+                if (setting.name === "logout") {
+                  handleClose = handleLogOut;
+                }
+                return (
+                  <MenuItem key={setting.name} onClick={handleClose}>
+                    <NavLink
+                      to={setting.link}
+                      style={{ textDecoration: "none", color: "black" }}
+                    >
+                      <Typography textAlign="center">{setting.name}</Typography>
+                    </NavLink>
+                  </MenuItem>
+                );
+              })}
             </Menu>
           </Box>
         </Toolbar>

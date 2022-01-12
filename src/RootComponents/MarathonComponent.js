@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Avatar,
   Box,
@@ -14,12 +14,11 @@ import { LockSharp } from "@mui/icons-material";
 import marathonForm from "../FormComponentsJsonFiles/MarathonForm.json";
 import _ from "lodash";
 import BoxComponent from "../Components/BoxComponent";
+import { useDispatch } from "react-redux";
+import { ADD_MARATHON_DATA } from "../Redux/AllConstants";
 
 export const MarathonComponent = () => {
-  const onChangeFunction = (event) => {
-    console.log(event);
-  };
-
+  const dispatch = useDispatch();
   const getCurrentDate = () => {
     var d = new Date(),
       month = "" + (d.getMonth() + 1),
@@ -31,8 +30,32 @@ export const MarathonComponent = () => {
 
     return [year, month, day].join("-");
   };
+  const [marathonData, setMarathonData] = useState({
+    bookname: "",
+    pagesRead: 0,
+    currentDate: getCurrentDate(),
+    totalPages: 0,
+  });
 
-  const values = [["", ""], [""], [""], [0, getCurrentDate()], [0]];
+  const values = [
+    ["", ""],
+    [""],
+    [marathonData.bookname],
+    [marathonData.pagesRead, marathonData.currentDate],
+    [marathonData.totalPages],
+  ];
+
+  const addDataToMarathon = () => {
+    dispatch({ type: ADD_MARATHON_DATA, value: { ...marathonData } });
+  };
+
+  const onChangeFunction = (event) => {
+    let value = event.target.value;
+    setMarathonData((prev) => {
+      prev[event.target.name] = value;
+      return { ...prev };
+    });
+  };
 
   return (
     <Grid container>
@@ -86,8 +109,12 @@ export const MarathonComponent = () => {
 
             <Grid container direction="row" justify="center">
               <ButtonGroup disableElevation>
-                <Button variant="contained" color="primary">
-                  Sign Up
+                <Button
+                  onClick={addDataToMarathon}
+                  variant="contained"
+                  color="primary"
+                >
+                  Add
                 </Button>
                 <Button variant="outlined" color="primary">
                   Reset

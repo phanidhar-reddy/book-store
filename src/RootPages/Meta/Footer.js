@@ -1,9 +1,3 @@
-import {
-  Copyright,
-  Favorite,
-  LocationCity,
-  Restore,
-} from "@mui/icons-material";
 import { BottomNavigation, BottomNavigationAction, Paper } from "@mui/material";
 import React from "react";
 
