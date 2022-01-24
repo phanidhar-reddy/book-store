@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import {
   Avatar,
   Box,
@@ -15,10 +15,13 @@ import marathonForm from "../FormComponentsJsonFiles/MarathonForm.json";
 import _ from "lodash";
 import BoxComponent from "../Components/BoxComponent";
 import { useDispatch } from "react-redux";
-import { ADD_MARATHON_DATA } from "../Redux/AllConstants";
+import UserContext from "../UserContext/UserContext";
+import { marathonService } from "../Redux/Actions/marathonActions";
 
 export const MarathonComponent = () => {
   const dispatch = useDispatch();
+  const userCon = useContext(UserContext);
+  console.log(userCon);
   const getCurrentDate = () => {
     var d = new Date(),
       month = "" + (d.getMonth() + 1),
@@ -38,15 +41,23 @@ export const MarathonComponent = () => {
   });
 
   const values = [
-    ["", ""],
-    [""],
+    [userCon?.user?.firstname, userCon?.user?.lastname],
+    [userCon?.user?.userid],
     [marathonData.bookname],
     [marathonData.pagesRead, marathonData.currentDate],
     [marathonData.totalPages],
   ];
 
   const addDataToMarathon = () => {
-    dispatch({ type: ADD_MARATHON_DATA, value: { ...marathonData } });
+    marathonService.addMarathonData(dispatch, marathonData);
+    setMarathonData((prev) => {
+      return {
+        bookname: "",
+        pagesRead: 0,
+        currentDate: getCurrentDate(),
+        totalPages: 0,
+      };
+    });
   };
 
   const onChangeFunction = (event) => {

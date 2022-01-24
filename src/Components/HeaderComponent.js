@@ -17,13 +17,14 @@ import { NavLink } from "react-router-dom";
 
 export const HeaderComponent = (props) => {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
-  const display = props.hideAll ? "none" : "block";
+  const displayHeaderSection = props.hideAll ? "none" : "block";
   //const pages = [{ name: "Books", link: "/book" }, "Marathon", "Reports"];
   const pages = [
-    { name: "Books", link: "/books" },
-    { name: "Marathon", link: "/marathon" },
-    { name: "Reports", link: "/reports" },
+    { name: "Books", link: "/books", visibility: true },
+    { name: "Marathon", link: "/marathon", visibility: true },
+    { name: "Reports", link: "/reports", visibility: props.user.role === "1" },
   ];
+  console.log(pages);
   //const settings = ["Profile", "Dashboard", "Logout"];
   const settings = [
     { name: "Profile", link: "/profile" },
@@ -42,6 +43,28 @@ export const HeaderComponent = (props) => {
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
+  };
+
+  const createPages = () => {
+    return pages.map((page) => {
+      return page.visibility === true ? (
+        <MenuItem onClick={props.handleBooksFetch} key={page.name}>
+          <NavLink to={page.link} style={{ textDecoration: "none" }}>
+            <Button
+              sx={{
+                my: 2,
+                color: "white",
+                display: { displayHeaderSection },
+              }}
+            >
+              {page.name}
+            </Button>
+          </NavLink>
+        </MenuItem>
+      ) : (
+        <div></div>
+      );
+    });
   };
 
   return (
@@ -69,22 +92,14 @@ export const HeaderComponent = (props) => {
             </IconButton>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <MenuItem onClick={props.handleBooksFetch} key={page.name}>
-                <NavLink to={page.link} style={{ textDecoration: "none" }}>
-                  <Button sx={{ my: 2, color: "white", display: { display } }}>
-                    {page.name}
-                  </Button>
-                </NavLink>
-              </MenuItem>
-            ))}
+            {createPages()}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton
                 onClick={handleOpenUserMenu}
-                sx={{ p: 0, display: { display } }}
+                sx={{ p: 0, display: { displayHeaderSection } }}
               >
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
               </IconButton>
