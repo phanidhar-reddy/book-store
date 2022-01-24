@@ -16,7 +16,7 @@ import _ from "lodash";
 import BoxComponent from "../Components/BoxComponent";
 import { useDispatch } from "react-redux";
 import UserContext from "../UserContext/UserContext";
-import { marathonService } from "../Redux/Actions/marathonActions";
+import marathonService from "../Redux/Actions/marathonActions";
 
 export const MarathonComponent = () => {
   const dispatch = useDispatch();
@@ -49,7 +49,7 @@ export const MarathonComponent = () => {
   ];
 
   const addDataToMarathon = () => {
-    marathonService.addMarathonData(dispatch, marathonData);
+    dispatch(marathonService.addMarathonData(marathonData));
     setMarathonData((prev) => {
       return {
         bookname: "",

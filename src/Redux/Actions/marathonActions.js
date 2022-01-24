@@ -1,13 +1,11 @@
 import { ADD_MARATHON_DATA } from "../AllConstants";
 
-
-const addMarathonData = (dispatch,marathon) =>{
-    dispatch({ type: ADD_MARATHON_DATA, value: { ...marathon } });
-}
-
+const addMarathonData = (marathon) => (dispatch) => {
+  dispatch({ type: ADD_MARATHON_DATA, value: { ...marathon } });
+};
 
 const marathonService = {
-    addMarathonData
-}
+  addMarathonData,
+};
 
-export const marathonService;
+export default marathonService;
